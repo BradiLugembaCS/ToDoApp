@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevDo</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="scipt.js"></script>
+    
 </head>
 <body>
 
     <h1>What will you do today?</h1>
 
-    <input type="text" class="form-control" placeholder="Add new item...">
+    <input type="text" id="input" class="form-control" placeholder="Add new item...">
 
     <select id="priority" class="form-control" name="priority">
 
@@ -21,11 +21,11 @@
 
     </select>
 
-    <button id="addBtn" class="btn btn-primary">Add item</button>
+    <button onclick="addTask()" id="addBtn" class="btn btn-primary">Add item</button>
 
-    <ul>
+    <ul id="task-list">
 
     </ul>
-    
+    <script src="scipt.js"></script>
 </body>
 </html>
